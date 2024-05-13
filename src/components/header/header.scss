@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+#header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    .containerhead {
+        width: 1440px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            cursor: pointer;
+
+            .logo {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+
+            nav ul {
+                display: flex;
+                gap: 60px;
+                list-style: none;
+
+                li a {
+                    text-decoration: none;
+                    color: #F9FAFB;
+                    font-family: 'DM Sans';
+                    font-weight: 500;
+                    font-size: 14px;
+
+                }
+            }
+        }
+
+        .contact-us {
+            height: 42px;
+            width: 132px;
+            transition: .2s;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 12px 24px 12px 24px;
+            background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+
+            &:hover {
+                background: linear-gradient(90.35deg, #417dff 0.36%, #e749ff 201.02%);
+            }
+
+            &:active {
+                transform: scale(0.95);
+            }
+
+            text-decoration: none;
+            color: #F9FAFB;
+            font-family: 'DM Sans';
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+}
+
